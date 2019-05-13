@@ -1,15 +1,13 @@
+const fs = require('fs')
+const fsp = require('fs-promise')
+const JSZip = require('jszip')
+const xml2js = require('xml2js')
 
-import fs from 'fs'
-import fsp from 'fs-promise'
-import JSZip from 'jszip'
-import xml2js from 'xml2js'
+const Slide = require('./Slide')
 
-import Slide from './Slide.js'
-
-export default class Presentation {
-
+class Presentation {
     constructor() {
-        this.contents = {};
+        this.contents = {}
     }
 
     /**
@@ -204,6 +202,8 @@ export default class Presentation {
         });
     }
 }
+
+module.exports = Presentation
 
 /**
  * Parse xml to object (Promise)

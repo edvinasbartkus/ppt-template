@@ -1,8 +1,6 @@
+const entities = require('entities')
 
-import entities from 'entities'
-
-
-export default class Slide {
+class Slide {
 
 	constructor(rel, content) {
 
@@ -67,3 +65,5 @@ export default class Slide {
 		return { key: key, value: value };
 	}
 }
+
+module.exports = Slide

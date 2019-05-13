@@ -85,9 +85,6 @@
 
         npm install
 
-- **Babel Build**
-
-        npm run build
 
 - **Mocha Test**
 
